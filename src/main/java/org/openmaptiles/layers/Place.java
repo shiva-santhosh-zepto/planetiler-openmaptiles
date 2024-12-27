@@ -357,6 +357,7 @@ public class Place implements
       .setMinZoom(minzoom)
       .setSortKey(getSortKey(rank, placeType, element.population(), element.name()))
       .setPointLabelGridPixelSize(12, 128);
+      .setAttrWithMinzoom("entrance", element.source().getTag("entrance"), 14)
 
     if (rank == null) {
       feature.setPointLabelGridLimit(LABEL_GRID_LIMITS);
