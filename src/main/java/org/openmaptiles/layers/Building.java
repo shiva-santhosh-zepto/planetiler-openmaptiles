@@ -166,6 +166,7 @@ public class Building implements
         .setAttrWithMinzoom(Fields.RENDER_MIN_HEIGHT, renderMinHeight, 14)
         .setAttrWithMinzoom(Fields.COLOUR, color, 14)
         .setAttrWithMinzoom(Fields.HIDE_3D, hide3d, 14)
+        .setAttrWithMinzoom("name", element.source().getTag("name"), 14)
         .setSortKey(renderHeight);
       if (mergeZ13Buildings) {
         feature
